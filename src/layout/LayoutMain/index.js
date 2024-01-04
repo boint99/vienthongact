@@ -1,21 +1,22 @@
-import Footer from "../Footer";
+import "../layout.scss";
+import { Layout } from "antd";
+import MenuHeader from "../../components/MenuHeader";
+import { Footer, Header } from "antd/es/layout/layout";
 import { Outlet } from "react-router-dom";
-import { Layout} from "antd";
-import '../layout.scss';
 
 const LayoutMain = () => {
-  const { Content, Header } = Layout;
   return (
     <>
-      <Layout>
-        <Header />
+      <Layout className="layout">
+        <Header className="layout__header">
+          <MenuHeader />
+        </Header>
         <Layout>
-          <Content>main content</Content>
           <Outlet />
         </Layout>
-        <Footer />
+        <Footer>footer</Footer>
       </Layout>
     </>
   );
-}
+};
 export default LayoutMain;

@@ -11,7 +11,7 @@ export const routes = [
     {
         path: '/',
         element: <LayoutMain />,
-        chidren: [
+        children: [
             {
                 index: true,
                 element: <Home />
