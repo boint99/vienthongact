@@ -1,0 +1,95 @@
+@import "./_minxin";
+$color-pramiry: #0033a0;
+
+
+.home-bg {
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  &__row {
+    flex-flow: nowrap;
+  }
+  &__item {
+    position: relative;
+    top: 0;
+    left: 0;
+    img {
+      width: 100%;
+      height: 700px;
+      object-fit: cover;
+    }
+    &--content {
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      max-width: 450px;
+      background: #fff;
+      border-radius: 40px 0 40px 0;
+      padding: 40px;
+      transform: translateY(-50%);
+
+      h2 {
+        font-size: 2.5rem;
+        margin: 0;
+      }
+      p {
+        line-height: 23px;
+        font-size: 16px;
+      }
+    }
+    &--button {
+      font-size: 19px;
+      height: auto;
+      background: $color-pramiry;
+      &:hover {
+        background: #0033a0cd !important;
+      }
+    }
+  }
+
+  &__prev-next-button {
+    position: absolute;
+    top: 50%;
+    // left: 20px;
+    min-width: 100%;
+    .previous {
+        float: right;
+        margin-right: 3rem;
+    }
+    .next {
+        margin-left: 3rem;
+    }
+  }
+  @media (max-width: 767.98px) {
+    &__item {
+      &--content {
+        left: 0;
+        margin: 0 20px;
+        max-width: 350px;
+      }
+    }
+  }
+  @media (max-width: 991.98px) {
+    &__item {
+      &--content {
+        left: 10%;
+      }
+    }
+  }
+}
+
+.history {
+    margin-top: 80px;
+    overflow: hidden;
+    &__photo {
+        width: 100%;
+        position: relative;
+        img {
+            position: absolute;
+            width: 300px;
+            height: 450px;
+            object-fit: cover;
+        }
+    }
+}

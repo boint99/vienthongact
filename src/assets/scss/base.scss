@@ -26,4 +26,13 @@
     }
 }
 
+.btn-primary {
+    font-size: 19px;
+    height: auto;
+    background:#0033a0 ;
+    &:hover {
+      background: #0033a0cd !important;
+    }
+  }
+
 
