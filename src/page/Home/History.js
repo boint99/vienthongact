@@ -15,11 +15,11 @@ const History = () => {
           </Col>
           <Col xl={12}>
             <div className="history__content">
-              <div>
+              <div className="history__content--head">
                 TỪ NĂM <span>2011</span>
               </div>
-              <h2>Chúng tôi có 20+ năm kinh nghiệm</h2>
-              <p>
+              <h2>Chúng tôi có <span>20+</span> năm kinh nghiệm</h2>
+              <p style={{fontStyle:"italic"}}>
                 Công ty Cổ phần Viễn thông ACT thành lập ngày 21 tháng 11 năm
                 2011; Hoạt động trên phạm vi toàn quốc, với các lĩnh vực kinh
                 doanh thuộc ngành viễn thông như: Thiết kế hạ tầng viễn thông;
@@ -33,8 +33,8 @@ const History = () => {
                 tận tâm và trách nhiệm, chúng tôi hoàn toàn tin tưởng sẽ đáp ứng
                 được sự kỳ vọng của Quý Khách hàng một cách tốt nhất.
               </p>
+              <Button className="history__btn btn-primary">Về Chúng Tôi</Button>
             </div>
-            <Button className="history__btn btn-primary">Về Chúng Tôi</Button>
           </Col>
         </Row>
         </div>
